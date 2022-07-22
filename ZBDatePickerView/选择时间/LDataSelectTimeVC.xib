@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LDataSelectTimeVC">
+            <connections>
+                <outlet property="pickView" destination="yHm-i2-2I2" id="3wA-wp-gl8"/>
+                <outlet property="timeLabel" destination="xbK-T1-7OR" id="lbq-eE-89a"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Tzd-HQ-9Mj">
+                    <rect key="frame" x="132" y="144" width="150" height="1"/>
+                    <color key="backgroundColor" red="0.13725490200000001" green="0.76078431369999999" blue="0.71764705880000002" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="150" id="8Xj-bq-h1o"/>
+                        <constraint firstAttribute="height" constant="1" id="k6j-fU-BBO"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yHm-i2-2I2" customClass="ZBSelectMonthTimeView">
+                    <rect key="frame" x="0.0" y="165" width="414" height="174.5"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="yHm-i2-2I2" secondAttribute="height" multiplier="375:158" id="vlh-gg-l1E"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2020-01" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xbK-T1-7OR">
+                    <rect key="frame" x="171" y="108" width="72.5" height="26"/>
+                    <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="22"/>
+                    <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Tzd-HQ-9Mj" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" constant="100" id="6WD-tr-IxR"/>
+                <constraint firstItem="yHm-i2-2I2" firstAttribute="top" secondItem="Tzd-HQ-9Mj" secondAttribute="bottom" constant="20" id="9ns-nC-0DV"/>
+                <constraint firstItem="xbK-T1-7OR" firstAttribute="centerX" secondItem="Tzd-HQ-9Mj" secondAttribute="centerX" id="C4X-eg-IkY"/>
+                <constraint firstItem="Tzd-HQ-9Mj" firstAttribute="top" secondItem="xbK-T1-7OR" secondAttribute="bottom" constant="10" id="GaL-ke-AD4"/>
+                <constraint firstItem="yHm-i2-2I2" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="d2l-e5-qJZ"/>
+                <constraint firstItem="yHm-i2-2I2" firstAttribute="trailing" secondItem="Q5M-cg-NOt" secondAttribute="trailing" id="eyR-tS-hlA"/>
+                <constraint firstItem="Tzd-HQ-9Mj" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="os1-Vf-3M9"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
+            <point key="canvasLocation" x="139" y="129"/>
+        </view>
+    </objects>
+</document>
